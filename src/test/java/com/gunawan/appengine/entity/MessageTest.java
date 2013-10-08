@@ -19,9 +19,9 @@ public class MessageTest extends BaseTest {
 	@Test
 	public void save() {
 		Message message = new Message();
-		message.message = "Hello World";
+		message.setMessage("Hello World");
 		ofy().save().entity(message).now();
 		Message fetched = ofy().load().entity(message).now();
-		Assert.assertTrue("Hello World".equals(fetched.message));
+		Assert.assertTrue("Hello World".equals(fetched.getMessage()));
 	}
 }
