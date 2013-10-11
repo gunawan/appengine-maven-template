@@ -10,6 +10,12 @@ To simply run the app:
     mvn clean install
     mvn appengine:devserver
 
+API
+-----------
+http://localhost:8080/_ah/api/messages/v1/list
+http://localhost:8080/_ah/api/messages/v1/ok
+http://localhost:8080/_ah/api/messages/v1/error
+
 Issue
 -----------
 If you are encountering the following error in Eclipse, you may solve it by executing maven goal outside Eclipse, i.e. Terminal.
@@ -21,6 +27,3 @@ This is related to issue logged in https://code.google.com/p/appengine-maven-plu
 Version
 -----------
 Google AppEngine 1.8.5
-
-Issue
------------
